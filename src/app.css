@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS variables */
+:root {
+	--primary-off-white: #F2F7F2;
+	--primary-black: #1B1818;
+	--secondary-dark-gray: #3C3C3C;
+	--primary-golden-yellow: #FFD22E;
+}
+
+/* Global styles */
+body {
+	font-family: 'Parkinsans', sans-serif;
+	background-color: #F3EEEE;
+}
+
+
+/* Custom utility classes */
+@layer utilities {
+	.text-primary-off-white {
+		color: var(--primary-off-white);
+	}
+
+	.text-primary-black {
+		color: var(--primary-black);
+	}
+
+	.bg-block-overlay {
+		background: rgba(169, 64, 66, .05);
+	}
+
+	.text-secondary-dark-gray {
+		color: var(--secondary-dark-gray);
+	}
+
+	.bg-loan-block {
+		background: rgba(27, 27, 27, 0.04);
+	}
+
+	.block-title {
+		@apply text-2xl font-bold text-primary-black leading-[31px] md:text-4xl md:leading-[47px];
+	}
+
+	.bg-primary-golden-yellow {
+		background: var(--primary-golden-yellow);
+	}
+}  
